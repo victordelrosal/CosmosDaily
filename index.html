@@ -210,12 +210,34 @@
   <script>
     let isGenerating = false;
     let cosmicData = null;
+    const LOCAL_STORAGE_VERSION = '1.0'; // Version tracking for localStorage
 
     // Initialize on page load
     window.addEventListener('load', initialize);
 
+    // Helper function to generate SHA-256 hash from text
+    async function sha256(text) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(text);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
     // Helper function to get seen items from localStorage
     function getSeen(category) {
+      // Check version - reset if version changed
+      const storedVersion = localStorage.getItem('cosmos_version');
+      if (storedVersion !== LOCAL_STORAGE_VERSION) {
+        console.log(`Version changed from ${storedVersion || 'none'} to ${LOCAL_STORAGE_VERSION}. Resetting tracking.`);
+        localStorage.setItem('cosmos_version', LOCAL_STORAGE_VERSION);
+        Object.keys(localStorage).forEach(key => {
+          if (key.startsWith('seen_')) {
+            localStorage.removeItem(key);
+          }
+        });
+      }
+      
       const seen = JSON.parse(localStorage.getItem(`seen_${category}`) || '[]');
       return new Set(seen);
     }
@@ -226,27 +248,88 @@
     }
 
     // Helper function to get random unseen item
-    function getRandomUnseen(category, data) {
+    async function getRandomUnseen(category, data) {
       const seen = getSeen(category);
-      const pool = data.filter((_, i) => !seen.has(i));
       
-      // If all items have been seen, reset
-      if (pool.length === 0) {
+      // Generate hashes for all items if we need to compare
+      const hashedItems = await Promise.all(data.map(async (item) => {
+        return {
+          item: item,
+          hash: await sha256(item.text)
+        };
+      }));
+      
+      // Filter to find unseen items
+      const pool = hashedItems.filter(({ hash }) => !seen.has(hash));
+      
+      console.log(`${category}: ${pool.length}/${data.length} items available in pool`);
+      
+      // If all items have been seen or we have an invalid storage state, reset
+      if (pool.length === 0 || seen.size >= data.length) {
+        console.log(`All ${data.length} items in ${category} have been seen. Resetting tracking.`);
         localStorage.removeItem(`seen_${category}`);
         return getRandomUnseen(category, data); // Retry after reset
       }
       
       const index = Math.floor(Math.random() * pool.length);
       const selected = pool[index];
-      const realIndex = data.indexOf(selected);
-      seen.add(realIndex);
+      
+      // Track by hash instead of array index
+      seen.add(selected.hash);
       saveSeen(category, seen);
-      return selected;
+      
+      return selected.item;
+    }
+
+    // Backup all seen items to JSON
+    function backupSeenItems() {
+      const backup = {
+        version: LOCAL_STORAGE_VERSION,
+        timestamp: new Date().toISOString(),
+        data: {}
+      };
+      
+      // Collect all seen_ keys
+      Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('seen_')) {
+          backup.data[key] = JSON.parse(localStorage.getItem(key));
+        }
+      });
+      
+      return JSON.stringify(backup);
+    }
+
+    // Restore seen items from backup JSON
+    function restoreSeenItems(backupJson) {
+      try {
+        const backup = JSON.parse(backupJson);
+        
+        // Check version compatibility
+        if (backup.version !== LOCAL_STORAGE_VERSION) {
+          console.warn(`Backup version (${backup.version}) differs from current (${LOCAL_STORAGE_VERSION})`);
+        }
+        
+        // Restore all data
+        Object.keys(backup.data).forEach(key => {
+          localStorage.setItem(key, JSON.stringify(backup.data[key]));
+        });
+        
+        console.log(`Restored backup from ${backup.timestamp}`);
+        return true;
+      } catch (error) {
+        console.error('Failed to restore backup:', error);
+        return false;
+      }
     }
 
     async function initialize() {
       try {
         console.log('Initializing Cosmos Daily...');
+        
+        // Ensure version is set
+        if (!localStorage.getItem('cosmos_version')) {
+          localStorage.setItem('cosmos_version', LOCAL_STORAGE_VERSION);
+        }
         
         // Fetch the cosmic data from the local directory (same as index.html)
         console.log('Fetching cosmic data...');
@@ -287,7 +370,7 @@
       }
     }
 
-    function generatePost() {
+    async function generatePost() {
       if (isGenerating || !cosmicData) {
         console.warn('Cannot generate post: ' + (isGenerating ? 'Already generating' : 'No data available'));
         return;
@@ -305,10 +388,10 @@
 
       try {
         // Get random items from each category, tracking what's been seen
-        const terrestrialItem = getRandomUnseen('terrestrial', cosmicData.terrestrial);
-        const solarItem = getRandomUnseen('solar', cosmicData.solar);
-        const milkywayItem = getRandomUnseen('milkyway', cosmicData.milkyway);
-        const galaxyItem = getRandomUnseen('galaxies', cosmicData.galaxies);
+        const terrestrialItem = await getRandomUnseen('terrestrial', cosmicData.terrestrial);
+        const solarItem = await getRandomUnseen('solar', cosmicData.solar);
+        const milkywayItem = await getRandomUnseen('milkyway', cosmicData.milkyway);
+        const galaxyItem = await getRandomUnseen('galaxies', cosmicData.galaxies);
 
         // Animate sections and update content
         sections.forEach((section, index) => {
@@ -323,6 +406,9 @@
         updateSectionWithLink('milkyway', milkywayItem);
         updateSectionWithLink('galaxy', galaxyItem);
 
+        // Log current tracking stats to console
+        logTrackingStats();
+
       } catch (error) {
         console.error('Generation error:', error);
         document.getElementById('place').textContent = '⚠️ Error generating content - Try again!';
@@ -332,6 +418,21 @@
         btn.disabled = false;
         isGenerating = false;
       }
+    }
+
+    // Helper function to log tracking statistics
+    function logTrackingStats() {
+      const stats = {};
+      ['terrestrial', 'solar', 'milkyway', 'galaxies'].forEach(category => {
+        const seen = getSeen(category);
+        const total = cosmicData[category].length;
+        stats[category] = {
+          seen: seen.size,
+          total: total,
+          remaining: total - seen.size
+        };
+      });
+      console.table(stats);
     }
 
     // Helper function to update section with clickable link

@@ -414,7 +414,7 @@
         document.getElementById('place').textContent = '⚠️ Error generating content - Try again!';
         sections.forEach(section => section.classList.add('visible'));
       } finally {
-        btn.innerHTML = 'EXPLORE 🔄';
+        btn.innerHTML = 'REFRESH ↻';
         btn.disabled = false;
         isGenerating = false;
       }

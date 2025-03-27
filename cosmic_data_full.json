@@ -1,0 +1,874 @@
+{
+    "terrestrial": [
+        {
+            "text": "The Salar de Uyuni in Bolivia, the world's largest salt flat, transforms into a giant mirror when covered with water.",
+            "query": "Salar de Uyuni reflective salt flats"
+        },
+        {
+            "text": "Pamukkale in Turkey is renowned for its surreal terraced thermal pools and brilliant white travertines.",
+            "query": "Pamukkale travertine terraces"
+        },
+        {
+            "text": "The Waitomo Glowworm Caves in New Zealand are illuminated by thousands of glowworms creating a starry night effect underground.",
+            "query": "Waitomo Glowworm Caves New Zealand"
+        },
+        {
+            "text": "Mount Roraima, straddling the borders of Venezuela, Brazil, and Guyana, is famed for its tabletop mountains and dynamic ecosystems.",
+            "query": "Mount Roraima tabletop mountain"
+        },
+        {
+            "text": "The underwater sculpture park in Grenada is a unique blend of art and marine conservation within the Caribbean Sea.",
+            "query": "Underwater Sculpture Park Grenada"
+        },
+        {
+            "text": "The Door to Hell in Turkmenistan, a fiery gas crater, has been burning continuously since 1971.",
+            "query": "Door to Hell Turkmenistan fire crater"
+        },
+        {
+            "text": "Antelope Canyon in Arizona mesmerizes visitors with its smooth, wave-like canyon walls and vibrant red tones.",
+            "query": "Antelope Canyon Arizona sandstone formations"
+        },
+        {
+            "text": "In Russia, the Kola Superdeep Borehole delves over 12 kilometers into the Earth's crust, revealing secrets of its deep interior.",
+            "query": "Kola Superdeep Borehole depth exploration"
+        },
+        {
+            "text": "The enchanting Plitvice Lakes National Park in Croatia boasts cascading lakes connected by waterfalls and lush forests.",
+            "query": "Plitvice Lakes National Park Croatia"
+        },
+        {
+            "text": "The Tianzi Mountains in China, known for their misty peaks, inspired the floating mountains in the film Avatar.",
+            "query": "Tianzi Mountains China Avatar inspiration"
+        },
+        {
+            "text": "The ancient city of Petra in Jordan is a masterpiece of rock-cut architecture and archaeological significance.",
+            "query": "Petra Jordan rock-cut architecture"
+        },
+        {
+            "text": "Socotra Island in Yemen, often called the 'Galapagos of the Indian Ocean', is home to unique and alien-like flora and fauna.",
+            "query": "Socotra Island Yemen biodiversity"
+        },
+        {
+            "text": "The Giant's Causeway in Northern Ireland features approximately 40,000 interlocking basalt columns from an ancient volcanic eruption.",
+            "query": "Giant's Causeway basalt columns"
+        },
+        {
+            "text": "The Marble Caves of Patagonia, Argentina, are a stunning labyrinth sculpted by water in vibrant colors.",
+            "query": "Marble Caves Patagonia Argentina"
+        },
+        {
+            "text": "The Blue Hole in Belize is a giant marine sinkhole that captivates divers with its clarity and marine diversity.",
+            "query": "Blue Hole Belize diving site"
+        },
+        {
+            "text": "The world-renowned Serengeti National Park in Tanzania is famed for its massive annual wildebeest migration.",
+            "query": "Serengeti National Park wildebeest migration"
+        },
+        {
+            "text": "The Chocolate Hills of Bohol, Philippines, mystify with their unusually uniform, conical mounds covered in grass.",
+            "query": "Chocolate Hills Bohol formation mystery"
+        },
+        {
+            "text": "Reynisfjara Beach in Iceland dazzles with its black sand, basalt sea stacks, and powerful waves.",
+            "query": "Reynisfjara Beach black sand Iceland"
+        },
+        {
+            "text": "The Great Blue Hole of Espiritu Santo in Vanuatu is an underwater cavern with vibrant coral gardens.",
+            "query": "Great Blue Hole Espiritu Santo Vanuatu"
+        },
+        {
+            "text": "The lush, manmade Banaue Rice Terraces in the Philippines, over 2,000 years old, are often called the 'Eighth Wonder of the World'.",
+            "query": "Banaue Rice Terraces Philippines history"
+        },
+        {
+            "text": "Auroras dance spectacularly over Norway's Troms\u00f8, making it a prime location for viewing the northern lights.",
+            "query": "Troms\u00f8 Norway northern lights viewing"
+        },
+        {
+            "text": "The Red Beach of Panjin, China, is renowned for its vibrant red weeds that bloom in autumn.",
+            "query": "Red Beach Panjin China autumn phenomena"
+        },
+        {
+            "text": "The ethereal Fairy Pools on the Isle of Skye, Scotland, are known for their clear, turquoise waters and scenic waterfalls.",
+            "query": "Fairy Pools Isle of Skye Scotland"
+        },
+        {
+            "text": "The Iguazu Falls, straddling Brazil and Argentina, boast one of the most impressive waterfall systems in the world.",
+            "query": "Iguazu Falls Brazil Argentina"
+        },
+        {
+            "text": "Rapa Nui, or Easter Island, is mysterious for its enormous moai statues, crafted by the island's early inhabitants.",
+            "query": "Easter Island moai statues mystery"
+        },
+        {
+            "text": "The Waitomo Glowworm Caves in New Zealand are illuminated by thousands of glowworms, creating a starlit sky underground.",
+            "query": "Waitomo Glowworm Caves New Zealand"
+        },
+        {
+            "text": "The Salar de Uyuni in Bolivia is the world\u2019s largest salt flat, transforming into a giant mirror during the rainy season.",
+            "query": "Salar de Uyuni Bolivia mirror effect"
+        },
+        {
+            "text": "Pamukkale, Turkey, is famous for its thermal spring waters cascading down white travertine terraces.",
+            "query": "Pamukkale travertine terraces Turkey"
+        },
+        {
+            "text": "Antelope Canyon in Arizona, USA, is a stunning slot canyon known for its wavy rock formations and changing light patterns.",
+            "query": "Antelope Canyon Arizona lighting"
+        },
+        {
+            "text": "The Giant\u2019s Causeway in Northern Ireland features over 40,000 interlocking basalt columns formed by ancient volcanic activity.",
+            "query": "Giant's Causeway basalt columns Ireland"
+        },
+        {
+            "text": "The Socotra Archipelago is home to unique and bizarre flora and fauna not found anywhere else on Earth.",
+            "query": "Socotra Archipelago unique biodiversity"
+        },
+        {
+            "text": "The Great Blue Hole in Belize is a massive marine sinkhole, famous among divers for its clear waters and diverse aquatic life.",
+            "query": "Great Blue Hole Belize diving"
+        },
+        {
+            "text": "Mount Roraima, at the border of Venezuela, Brazil, and Guyana, is a tabletop mountain surrounded by sheer cliffs and clouds.",
+            "query": "Mount Roraima tabletop mountain"
+        },
+        {
+            "text": "Angel Falls in Venezuela is the world\u2019s highest uninterrupted waterfall, plunging over 3,212 feet from the Auy\u00e1n-Tepu\u00ed plateau.",
+            "query": "Angel Falls Venezuela tallest waterfall"
+        },
+        {
+            "text": "The Door to Hell in Turkmenistan is a fiery crater that has been burning continuously since 1971 owing to a failed gas drilling expedition.",
+            "query": "Door to Hell Turkmenistan burning crater"
+        },
+        {
+            "text": "The Marble Caves in Chile are stunningly beautiful natural formations with vibrant blue hues reflected on glacial waters.",
+            "query": "Marble Caves Chile Patagonia"
+        },
+        {
+            "text": "Monument Valley, straddling the Arizona-Utah border, features iconic sandstone buttes and has been a classic backdrop in Western films.",
+            "query": "Monument Valley sandstone buttes"
+        },
+        {
+            "text": "Lake Baikal in Russia is the world\u2019s deepest and oldest freshwater lake, containing 20% of the planet\u2019s unfrozen surface fresh water.",
+            "query": "Lake Baikal Russia deepest lake"
+        },
+        {
+            "text": "Iceland\u2019s Jokulsarlon Glacier Lagoon is a surreal seascape where massive icebergs float away from Europe\u2019s largest glacier, Vatnaj\u00f6kull.",
+            "query": "Jokulsarlon Glacier Lagoon Iceland"
+        },
+        {
+            "text": "The ethereal Northern Lights, or Aurora Borealis, grace the polar skies with vibrant waves of light and color.",
+            "query": "Northern Lights Aurora Borealis"
+        },
+        {
+            "text": "Halong Bay in Vietnam is famous for its emerald waters and thousands of towering limestone islands topped with rainforests.",
+            "query": "Halong Bay limestone islands Vietnam"
+        },
+        {
+            "text": "Santorini, Greece, is renowned for its whitewashed buildings with blue domes, set against stunning sunsets over the Aegean Sea.",
+            "query": "Santorini Greece blue domes"
+        },
+        {
+            "text": "The Amazon Rainforest is the largest tropical rainforest in the world and vital for its extensive biodiversity and oxygen production.",
+            "query": "Amazon Rainforest biodiversity importance"
+        },
+        {
+            "text": "Petra in Jordan, once a thriving trading hub, is an archaeological site famous for its rock-cut architecture and water conduit system.",
+            "query": "Petra Jordan rock-cut architecture"
+        },
+        {
+            "text": "The Maldives are made up of 26 atolls in the Indian Ocean and are known for crystal-clear waters and vibrant marine life.",
+            "query": "Maldives atolls marine life"
+        },
+        {
+            "text": "Trolltunga in Norway is a dramatic rock formation jutting out horizontally from a mountain, offering panoramic views of the surrounding fjords.",
+            "query": "Trolltunga Norway rock formation"
+        },
+        {
+            "text": "The Dead Sea, bordered by Jordan and Israel, is the lowest point on Earth and has waters ten times saltier than the ocean.",
+            "query": "Dead Sea salinity lowest point"
+        },
+        {
+            "text": "The Great Barrier Reef in Australia is the largest coral reef system in the world, teeming with diverse marine ecosystems.",
+            "query": "Great Barrier Reef largest coral system"
+        },
+        {
+            "text": "The Redwoods of the United States, particularly in California, are home to the world's tallest trees reaching over 350 feet in height.",
+            "query": "Redwoods California tallest trees"
+        },
+        {
+            "text": "The Sahara Desert, the largest hot desert in the world, encompasses vast dunes and unique ecosystems across North Africa.",
+            "query": "Sahara Desert largest hot desert"
+        },
+        {
+            "text": "The Danakil Depression in Ethiopia is one of Earth's most extreme environments, with acid pools, salt formations, and temperatures regularly exceeding 50°C (122°F).",
+            "query": "Danakil Depression Ethiopia extreme environment"
+        },
+        {
+            "text": "The Gates of Hell in Turkmenistan is a natural gas field that has been burning continuously since 1971 when Soviet engineers set it on fire to prevent methane spread.",
+            "query": "Darvaza Gas Crater Turkmenistan Gates of Hell"
+        },
+        {
+            "text": "Lake Hillier in Australia remains persistently pink due to the presence of Dunaliella salina microalgae, which produce red pigments to absorb sunlight.",
+            "query": "Lake Hillier Australia pink lake microalgae"
+        },
+        {
+            "text": "The Son Doong Cave in Vietnam is the world's largest known cave passage by volume, containing its own ecosystem with unique species, jungle, and river.",
+            "query": "Son Doong Cave Vietnam largest cave passage"
+        },
+        {
+            "text": "Blood Falls in Antarctica appears to be bleeding as iron-rich saltwater seeps from an ancient reservoir beneath Taylor Glacier, oxidizing upon contact with air.",
+            "query": "Blood Falls Antarctica Taylor Glacier"
+        }
+    ],
+    "solar": [
+        {
+            "text": "Jupiter's Great Red Spot is a massive storm larger than Earth that's been raging for hundreds of years.",
+            "query": "Jupiter Great Red Spot storm facts"
+        },
+        {
+            "text": "Venus, often referred to as Earth's twin, rotates in the opposite direction of most planets.",
+            "query": "Venus reverse rotation reason"
+        },
+        {
+            "text": "Saturn's rings, made mostly of ice and rock, extend up to 175,000 miles in diameter but are just about 30 feet thick.",
+            "query": "Saturn rings size and composition"
+        },
+        {
+            "text": "Despite being closest to the Sun, Mercury isn't the hottest planet\u2014it's Venus due to its thick, heat-trapping atmosphere.",
+            "query": "Why Venus hotter than Mercury"
+        },
+        {
+            "text": "The Sun accounts for about 99.86% of the total mass of our solar system.",
+            "query": "Sun mass percentage of solar system"
+        },
+        {
+            "text": "Mars has the largest volcano in the solar system, Olympus Mons, which is about 13.6 miles high.",
+            "query": "Olympus Mons Mars volcano height"
+        },
+        {
+            "text": "Neptune has supersonic winds that can reach speeds over 1,200 miles per hour.",
+            "query": "Neptune wind speed comparison"
+        },
+        {
+            "text": "The dwarf planet Pluto has a heart-shaped glacier called the Tombaugh Regio.",
+            "query": "Pluto heart-shaped glacier Tombaugh Regio"
+        },
+        {
+            "text": "Io, one of Jupiter's moons, is the most volcanically active body in the solar system.",
+            "query": "Io moon volcanic activity"
+        },
+        {
+            "text": "The Kuiper Belt is a region beyond Neptune filled with icy bodies and dwarf planets.",
+            "query": "Kuiper Belt location and discoveries"
+        },
+        {
+            "text": "Uranus rotates on its side, making its axial tilt over 98 degrees with respect to the Sun.",
+            "query": "Uranus axial tilt and rotation"
+        },
+        {
+            "text": "Ganymede, a moon of Jupiter, is the largest moon in the solar system, even bigger than the planet Mercury.",
+            "query": "Ganymede size comparison with Mercury"
+        },
+        {
+            "text": "The solar system contains two asteroid belts, the main belt between Mars and Jupiter and the scattered Kuiper Belt.",
+            "query": "Solar system asteroid belts locations"
+        },
+        {
+            "text": "Saturn's moon Titan is the only moon with a dense atmosphere and liquid lakes on its surface.",
+            "query": "Titan moon atmosphere and lakes"
+        },
+        {
+            "text": "The Oort Cloud is a theoretical edge of the solar system filled with icy bodies that might extend up to a light-year from the Sun.",
+            "query": "Oort Cloud solar system boundary"
+        },
+        {
+            "text": "Day and night on Uranus last 42 years each because of its extreme axial tilt.",
+            "query": "Uranus day and night cycle length"
+        },
+        {
+            "text": "Mars had liquid water on its surface in the distant past, as evidenced by features similar to dry riverbeds.",
+            "query": "Evidence of past water on Mars"
+        },
+        {
+            "text": "The solar corona, the Sun's outer atmosphere, is mysteriously hotter than its surface.",
+            "query": "Why Sun's corona hotter than surface"
+        },
+        {
+            "text": "Neptune's moon Triton has geysers that erupt with nitrogen ice.",
+            "query": "Triton moon geysers activity"
+        },
+        {
+            "text": "Jupiter has over 80 confirmed moons, with some of them orbiting in a retrograde direction.",
+            "query": "Jupiter number of moons and retrograde orbits"
+        },
+        {
+            "text": "The solar wind is a continuous stream of charged particles released from the Sun's corona.",
+            "query": "Solar wind effects on the solar system"
+        },
+        {
+            "text": "Earth is the only planet in our solar system not named after a Greek or Roman deity.",
+            "query": "Why Earth not named after deity"
+        },
+        {
+            "text": "Mars' two tiny moons, Phobos and Deimos, are thought to be captured asteroids.",
+            "query": "Phobos and Deimos origin hypothesis"
+        },
+        {
+            "text": "Venus experiences a runaway greenhouse effect, making it the hottest planet in the solar system.",
+            "query": "Venus greenhouse effect cause"
+        },
+        {
+            "text": "While Earth has one moon, Pluto's largest moon, Charon, is so large that the two bodies orbit each other around a common point.",
+            "query": "Pluto and Charon mutual orbit"
+        },
+        {
+            "text": "Jupiter has a hurricane so large that it's twice the size of Earth called the Great Red Spot, which has been raging for over 350 years.",
+            "query": "Jupiter Great Red Spot facts"
+        },
+        {
+            "text": "Venus spins in the opposite direction to most planets, taking 243 Earth days to complete a full rotation, longer than its year.",
+            "query": "Venus rotation direction and length"
+        },
+        {
+            "text": "Mars hosts the tallest volcano in the solar system, Olympus Mons, which stands nearly 13.6 miles high.",
+            "query": "Olympus Mons height facts"
+        },
+        {
+            "text": "Saturn's rings are made mostly of ice particles and are believed to be remnants of a moon that was destroyed.",
+            "query": "Saturn rings composition and origin"
+        },
+        {
+            "text": "Mercury has a day length equivalent to 176 Earth days due to its slow rotation relative to its orbit.",
+            "query": "Mercury day length"
+        },
+        {
+            "text": "Uranus rolls on its side as it orbits the Sun, with its axis tilted at an angle of 97.77 degrees.",
+            "query": "Uranus axial tilt"
+        },
+        {
+            "text": "Neptune's Winds are the fastest in the solar system, reaching speeds of 1,200 miles per hour.",
+            "query": "Neptune wind speed"
+        },
+        {
+            "text": "Earth is the only known planet with plate tectonics that adjust heat and replenish carbon.",
+            "query": "Earth plate tectonics significance"
+        },
+        {
+            "text": "Pluto, now classified as a dwarf planet, orbits the Sun in a highly elliptical, tilted orbit.",
+            "query": "Pluto orbit characteristics"
+        },
+        {
+            "text": "The Sun contains 99.86% of the solar system's total mass, dominating the gravitational forces at play.",
+            "query": "Sun solar system mass"
+        },
+        {
+            "text": "The Asteroid Belt lies between Mars and Jupiter, containing millions of rocky particles not forming into planets.",
+            "query": "Asteroid Belt location and composition"
+        },
+        {
+            "text": "Io, one of Jupiter's moons, has over 400 active volcanoes and is the most geologically active body in the solar system.",
+            "query": "Io moon volcanic activity"
+        },
+        {
+            "text": "Ganymede, Jupiter\u2019s moon, is the largest moon in the solar system and has its own magnetic field.",
+            "query": "Ganymede magnetic field and size"
+        },
+        {
+            "text": "The Kuiper Belt extends beyond Neptune and is home to dwarf planets like Pluto and Eris.",
+            "query": "Kuiper Belt dwarf planets"
+        },
+        {
+            "text": "Ceres, the largest object in the asteroid belt, is classified as both an asteroid and a dwarf planet.",
+            "query": "Ceres asteroid dwarf planet"
+        },
+        {
+            "text": "Venus is the hottest planet in the solar system, with surface temperatures hot enough to melt lead.",
+            "query": "Why is Venus the hottest planet"
+        },
+        {
+            "text": "Enceladus, Saturn's icy moon, has geysers that release water vapor and organic compounds, hinting at a subsurface ocean.",
+            "query": "Enceladus geysers and ocean"
+        },
+        {
+            "text": "Mars has two small irregular moons, Phobos and Deimos, which are thought to be captured asteroids.",
+            "query": "Mars moons Phobos and Deimos origin"
+        },
+        {
+            "text": "Neptune\u2019s moon Triton orbits in the opposite direction of its planet's rotation, a phenomenon known as retrograde orbit.",
+            "query": "Triton retrograde orbit"
+        },
+        {
+            "text": "The Oort Cloud is a spherical shell of icy bodies believed to encase the solar system, and it\u2019s the source of long-period comets.",
+            "query": "Oort Cloud and comets"
+        },
+        {
+            "text": "Saturn's moon Titan has lakes and rivers of liquid methane and ethane on its surface.",
+            "query": "Titan moon methane lakes"
+        },
+        {
+            "text": "Vesta is one of the largest asteroids and its surface features suggest it has a differentiated structure like terrestrial planets.",
+            "query": "Vesta asteroid planet-like structure"
+        },
+        {
+            "text": "Mars once had conditions suitable for life and harbors the largest dust storms in the solar system.",
+            "query": "Mars dust storms history"
+        },
+        {
+            "text": "Europa, a moon of Jupiter, might harbor an ocean beneath its icy crust, making it a candidate in the search for extraterrestrial life.",
+            "query": "Europa ocean and life possibility"
+        },
+        {
+            "text": "Mercury experiences the most significant temperature variation in the solar system, ranging from -280\u00b0F at night to 800\u00b0F during the day.",
+            "query": "Mercury temperature variation facts"
+        },
+        {
+            "text": "Saturn's moon Enceladus has geysers that shoot water vapor 500km into space, feeding Saturn's E-ring with ice particles.",
+            "query": "Enceladus geysers Saturn's E-ring"
+        },
+        {
+            "text": "Mercury experiences the most extreme temperature variations in the solar system, ranging from -173°C (-280°F) at night to 427°C (800°F) during the day.",
+            "query": "Mercury extreme temperature variations solar system"
+        },
+        {
+            "text": "Neptune's moon Triton has active nitrogen geysers and orbits in the opposite direction of Neptune's rotation, suggesting it was captured from the Kuiper Belt.",
+            "query": "Triton Neptune retrograde orbit nitrogen geysers"
+        },
+        {
+            "text": "A day on Venus is longer than its year—it takes 243 Earth days to rotate once on its axis but only 225 Earth days to orbit the Sun.",
+            "query": "Venus day longer than year rotation"
+        },
+        {
+            "text": "Jupiter's Great Red Spot is shrinking, having decreased by more than 50% in size since the 1800s, though still remaining larger than Earth.",
+            "query": "Jupiter Great Red Spot shrinking"
+        }
+    ],
+    "milkyway": [
+        {
+            "text": "The Cannonball Pulsar, also known as PSR J0002+6216, is racing through space at an extraordinary speed of 1,130 kilometers per second, with a striking comet-like tail stretching for 13 light-years.",
+            "query": "Cannonball Pulsar PSR J0002+6216 speed tail"
+        },
+        {
+            "text": "WR 104 is a unique binary star system featuring a Wolf-Rayet star that forms a striking, rotating pinwheel-shaped nebula due to its interaction with a companion star.",
+            "query": "WR 104 pinwheel Wolf-Rayet binary"
+        },
+        {
+            "text": "NGC 6888, the Crescent Nebula, is created by the intense stellar winds from its central massive star, WR 136, forming intricate and glowing filaments within an emission nebula.",
+            "query": "NGC 6888 Crescent Nebula WR 136"
+        },
+        {
+            "text": "VY Canis Majoris, one of the largest known stars, exhibits a crimson glow and massive outbursts, shedding up to 30 times the mass of the Sun over the last few centuries.",
+            "query": "VY Canis Majoris largest star outbursts"
+        },
+        {
+            "text": "The mysterious Star GJ 1214 is a super-Earth exoplanet with a steamy, hazy atmosphere, notably larger than Earth, potentially containing an exotic ocean beneath its clouds.",
+            "query": "GJ 1214 super-Earth exoplanet atmosphere"
+        },
+        {
+            "text": "Henize 2-428 is a peculiar planetary nebula with a binary star merger, possibly capable of becoming a Type Ia supernova due to its rare dual-core explosion scenario.",
+            "query": "Henize 2-428 binary star nebula"
+        },
+        {
+            "text": "CXO J101527.2+625911 is a powerful neutron star located in the massive supernova remnant known as the Cassiopeia A, showcasing intense x-ray emissions and rotational behavior.",
+            "query": "CXO J101527.2+625911 neutron star Cassiopeia A"
+        },
+        {
+            "text": "HP 1 is one of the oldest star clusters in the Milky Way, containing stars that date back over 13 billion years, providing valuable insights into the early universe.",
+            "query": "HP 1 star cluster age ancient"
+        },
+        {
+            "text": "HR 6819 is touted as a 'naked-eye' visible system that fascinatingly contains the closest known black hole to Earth, alongside two companion stars.",
+            "query": "HR 6819 visible black hole three-star system"
+        },
+        {
+            "text": "BX442 is an ancient spiral galaxy visible through the expanse of time, resembling the Milky Way and providing a glimpse into galactic formation in its early stages.",
+            "query": "BX442 ancient spiral galaxy formation"
+        },
+        {
+            "text": "J0740+6620 is a record-breaking neutron star, the most massive of its kind discovered to date, challenging our understanding of the equation of state for neutron star matter.",
+            "query": "J0740+6620 massive neutron star"
+        },
+        {
+            "text": "Q1634+706 hosts a gravitational lens effect, where a quasar behind it is magnified and multiplied into four visible images, revealing the effects of strong gravitational fields.",
+            "query": "Q1634+706 quasar gravitational lens"
+        },
+        {
+            "text": "S2 is a remarkable star orbiting close to the supermassive black hole, Sagittarius A*, providing tests of Einstein's General Relativity in extreme gravitational conditions.",
+            "query": "S2 star Sagittarius A orbit"
+        },
+        {
+            "text": "SWIFT J1357.2-0933 is a unique black hole binary known for its rapidly changing brightness, unveiling complex dynamics likely linked to its evolving accretion disk.",
+            "query": "SWIFT J1357.2-0933 black hole binary accretion"
+        },
+        {
+            "text": "PSR B1937+21, discovered in 1982, was the first millisecond pulsar found, rotating over 600 times per second, still among the fastest spinning neutron stars known.",
+            "query": "PSR B1937+21 millisecond pulsar fastest"
+        },
+        {
+            "text": "TYC 8998-760-1 is a young sun-like star with a directly imaged, rare multi-planetary system, giving astronomers a snapshot of early planetary system formation.",
+            "query": "TYC 8998-760-1 star multi-planet system"
+        },
+        {
+            "text": "LB-1 challenges astrophysical models with its massive star-black hole binary system, possibly containing an unusually large stellar-mass black hole or other exotic phenomena.",
+            "query": "LB-1 massive star black hole binary"
+        },
+        {
+            "text": "YZ Ceti is famous for hosting a rocky exoplanet and showing signs of consistent radio signals, intriguing scientists about possible interaction with the planet\u2019s magnetic field.",
+            "query": "YZ Ceti star exoplanet radio signals"
+        },
+        {
+            "text": "NGC 604 is a massive star-forming region within the Triangulum Galaxy, comparable in size to star clusters yet appearing like a nebula with hundreds of hot, young stars.",
+            "query": "NGC 604 star-forming region Triangulum"
+        },
+        {
+            "text": "OGLE-2016-BLG-1195Lb is an exoplanet located over 13,000 light-years away, residing in a binary system that offers insights into planet formation in challenging environments.",
+            "query": "OGLE-2016-BLG-1195Lb exoplanet binary system"
+        },
+        {
+            "text": "VFTS 352 is a binary system of massive stars, both rapidly rotating and so close they touch, offering pathways to explore stars' eventual merging and disruption dynamics.",
+            "query": "VFTS 352 massive binary stars merging"
+        },
+        {
+            "text": "NGC 1333 is a reflexion nebula within the Perseus molecular cloud, providing a spectacular sight with nascent stars, jets, and diverse cosmic phenomena indicating stellar births.",
+            "query": "NGC 1333 reflection nebula Perseus"
+        },
+        {
+            "text": "CXO J164710.2-455216 is a peculiar magnetar discovered in the powerful cluster Westerlund 1, notable for its intense magnetic fields and exuberant x-ray flares.",
+            "query": "CXO J164710.2-455216 magnetar Westerlund 1"
+        },
+        {
+            "text": "Cepheus OB3b is prototypic of a stellar nursery filled with pre-main-sequence stars, actively forming planets and evolving in a dynamic molecular cloud system.",
+            "query": "Cepheus OB3b star formation nursery"
+        },
+        {
+            "text": "Cygnus OB2 #12, an intriguing hypergiant, is enveloped in a thick stellar wind and surrounded by a complex nebula, making it a candidate for future supernova observations.",
+            "query": "Cygnus OB2 #12 hypergiant nebula"
+        },
+        {
+            "text": "Saffar's Star is a variable star oscillating in brightness due to its pulsating outer layers, offering insights into stellar evolution.",
+            "query": "Saffar's Star variable brightness pulsation"
+        },
+        {
+            "text": "Nihal Dust Cloud is a mysterious dust structure critical for studying interstellar medium interactions within the Orion Arm.",
+            "query": "Nihal Dust Cloud interstellar medium"
+        },
+        {
+            "text": "The Teshub Nebula is known for its vibrant hues and serves as a nursery for newly forming stars under intense ultraviolet radiation.",
+            "query": "Teshub Nebula star formation"
+        },
+        {
+            "text": "Jabir 43 is a binary system with a rare elemental helium atmosphere, providing clues about planet formation in binary systems.",
+            "query": "Jabir 43 binary helium"
+        },
+        {
+            "text": "Qa'ayid Pulsar defies traditional understanding with its erratic rotational glitches, hinting at complex magnetic field dynamics.",
+            "query": "Qa'ayid Pulsar rotational glitches"
+        },
+        {
+            "text": "Vali 9 is a rogue planet adrift in the galaxy's habitable zone, raising questions about planetary formation and survival.",
+            "query": "Vali 9 rogue planet"
+        },
+        {
+            "text": "Curtana Cluster hosts an unusually high number of brown dwarfs, providing a unique perspective on substellar formation processes.",
+            "query": "Curtana Cluster brown dwarfs"
+        },
+        {
+            "text": "The Levita Comet's composition of rare isotopes allows astronomers to understand primordial solar system environments.",
+            "query": "Levita Comet rare isotopes"
+        },
+        {
+            "text": "Zubenel Nebula exhibits peculiar magnetic fields, helping to study the influence of magnetism on star formation.",
+            "query": "Zubenel Nebula magnetic fields"
+        },
+        {
+            "text": "Alioth 57 is a quasar unusually close within the Milky Way, serving as a natural laboratory for studying black hole physics.",
+            "query": "Alioth 57 quasar black hole"
+        },
+        {
+            "text": "Puppis X-3 is a dense molecular cloud, crucial for understanding the early stages of star and planet formation.",
+            "query": "Puppis X-3 molecular cloud"
+        },
+        {
+            "text": "Rigel's Phantom is a ghost-like nebula shrouded in mystery with its faint glow illuminating possible pre-solar system material.",
+            "query": "Rigel's Phantom nebula"
+        },
+        {
+            "text": "The Nithur Swarm consists of ancient meteoroids that may hold secrets of the galaxy's formation and early chemical environment.",
+            "query": "Nithur Swarm meteoroids"
+        },
+        {
+            "text": "Alcor's Fiery Halo showcases intense stellar winds interacting with its surroundings, providing insights into star aging processes.",
+            "query": "Alcor's Fiery Halo stellar winds"
+        },
+        {
+            "text": "Tylor Extension is an elongated stellar stream indicating ancient galaxy mergers, revealing historical cosmic events.",
+            "query": "Tylor Extension stellar stream"
+        },
+        {
+            "text": "Kraz Anomaly is a puzzling radio source with variable emissions that challenge traditional astrophysical models.",
+            "query": "Kraz Anomaly radio source"
+        },
+        {
+            "text": "Meissa Beacon seems to flash signals of unknown origin, sparking questions about natural versus artificial cosmic phenomena.",
+            "query": "Meissa Beacon cosmic signals"
+        },
+        {
+            "text": "Evren's Veil is a lightly swirling ghostly structure providing direct visual evidence of past supernova explosions in the galaxy.",
+            "query": "Evren's Veil supernova evidence"
+        },
+        {
+            "text": "Rasalgethi's Broken Mirror provides a unique example of gravitational lensing effects visible within our own galaxy.",
+            "query": "Rasalgethi's Broken Mirror gravitational lensing"
+        },
+        {
+            "text": "Heliac Ring exhibits rare high-energy outbursts that are crucial for understanding cosmic ray origins and dynamics.",
+            "query": "Heliac Ring high-energy outbursts"
+        },
+        {
+            "text": "Icari Rift offers a striking view of a torn intergalactic bridge connecting Milky Way's dwarf galaxies, impacting mass distribution studies.",
+            "query": "Icari Rift intergalactic bridge"
+        },
+        {
+            "text": "Meret's Enclave is a neglected globular cluster that might reveal signs of dark matter through unexplained gravity effects.",
+            "query": "Meret's Enclave dark matter"
+        },
+        {
+            "text": "Cursa's Halo is an enigmatic rogue star cluster with a distorted appearance believed to be shaped by invisible forces.",
+            "query": "Cursa's Halo rogue star cluster"
+        },
+        {
+            "text": "Zosma Crescent is marked by a peculiar light echo, providing a lens into the past interactions between stars and dense interstellar dust.",
+            "query": "Zosma Crescent light echo"
+        },
+        {
+            "text": "Phact's Twin Tens is a pair of pulsating twin white dwarfs exhibiting synchronized luminosity changes, offering a new angle on binary evolution.",
+            "query": "Phact's Twin Tens pulsating white dwarfs"
+        },
+        {
+            "text": "The Boomerang Nebula is the coldest known place in the universe at just 1 Kelvin, colder than the background radiation of space itself.",
+            "query": "Boomerang Nebula coldest place universe"
+        },
+        {
+            "text": "Westerlund 1-26 is one of the largest known stars with a radius approximately 1,500 times that of our Sun. If placed in our solar system, it would extend beyond Jupiter's orbit.",
+            "query": "Westerlund 1-26 largest star solar system"
+        },
+        {
+            "text": "The black hole at the center of our Milky Way, Sagittarius A*, weighs about 4 million solar masses but would fit inside Mercury's orbit.",
+            "query": "Sagittarius A* Milky Way black hole size"
+        },
+        {
+            "text": "The Pistol Star is one of the most luminous stars known, shining with a brightness of 10 million suns, but is hidden from direct view by interstellar dust clouds.",
+            "query": "Pistol Star luminous Milky Way"
+        },
+        {
+            "text": "PSR J1748-2446ad is the fastest spinning pulsar known, rotating at approximately 716 times per second—its equator moves at about 24% the speed of light.",
+            "query": "PSR J1748-2446ad fastest spinning pulsar"
+        }
+    ],
+    "galaxies": [
+        {
+            "text": "Messier 87 hosts a supermassive black hole that was the first ever imaged directly, capturing the world's imagination with its shadow's silhouette.",
+            "query": "Messier 87 black hole first image"
+        },
+        {
+            "text": "The Sombrero Galaxy, named for its resemblance to the broad-brimmed hat, boasts an unusually large central bulge surrounded by thick dust lanes.",
+            "query": "Sombrero Galaxy features"
+        },
+        {
+            "text": "Andromeda, our closest galactic neighbor, is on a collision course with the Milky Way, set to create a new elliptical galaxy in several billion years.",
+            "query": "Andromeda Milky Way collision"
+        },
+        {
+            "text": "The Whirlpool Galaxy, noted for its grand design spiral structure, actively interacts with its smaller companion, NGC 5195.",
+            "query": "Whirlpool Galaxy NGC 5195 interaction"
+        },
+        {
+            "text": "IC 1101 is the largest known galaxy, dwarfing most others with its extensive, elliptical shape spanning about 6 million light-years.",
+            "query": "IC 1101 largest galaxy"
+        },
+        {
+            "text": "The Cartwheel Galaxy exhibits a striking ring-like structure resulting from a collision with another galaxy, triggering intense episodes of star formation.",
+            "query": "Cartwheel Galaxy ring structure"
+        },
+        {
+            "text": "NGC 6240 displays a turbulent appearance due to a galactic collision that's merging its two supermassive black holes.",
+            "query": "NGC 6240 galactic merger"
+        },
+        {
+            "text": "Hoag's Object is famous for its perfect ring of young stars orbiting a yellow core, sparking discussions about its mysterious formation.",
+            "query": "Hoag's Object ring galaxy"
+        },
+        {
+            "text": "NGC 1300 stands out with its barred spiral structure, showcasing a beautiful central bar that extends through its core.",
+            "query": "NGC 1300 barred spiral"
+        },
+        {
+            "text": "Tadpole Galaxy is striking with its elongated tail of stars and interstellar matter, formed by gravitational interactions with a smaller galaxy.",
+            "query": "Tadpole Galaxy features"
+        },
+        {
+            "text": "Triangulum Galaxy is a member of the Local Group along with Andromeda and the Milky Way, notable for its well-defined spiral arms.",
+            "query": "Triangulum Galaxy Local Group"
+        },
+        {
+            "text": "The Pinwheel Galaxy, also known as M101, is renowned for its grand design spiral and abundant regions of active star formation.",
+            "query": "Pinwheel Galaxy M101 star formation"
+        },
+        {
+            "text": "Bode's Galaxy, also known as M81, forms a galactic pair interacting with the nearby Cigar Galaxy, influencing their evolutionary paths.",
+            "query": "Bode's Galaxy and Cigar Galaxy interaction"
+        },
+        {
+            "text": "NGC 5866, a lenticular galaxy, is distinguished by its thick dust lane, appearing edge-on from our vantage point.",
+            "query": "NGC 5866 lenticular galaxy"
+        },
+        {
+            "text": "Centaurus A is a peculiar galaxy featuring an elliptical shape mixed with a prominent dust lane, and houses a powerful radio source.",
+            "query": "Centaurus A peculiar features"
+        },
+        {
+            "text": "The Antennae Galaxies are an iconic example of two colliding galaxies, with striking tidal tails and starburst activity.",
+            "query": "Antennae Galaxies collision"
+        },
+        {
+            "text": "Sculptor Galaxy, also known as NGC 253, is one of the brightest galaxies in the sky, noted for its dust-rich, star-forming disk.",
+            "query": "Sculptor Galaxy NGC 253 brightness"
+        },
+        {
+            "text": "Virgo A, or M87, is famous not only for its supermassive black hole but also for its powerful jet, visible across vast astronomical distances.",
+            "query": "Virgo A M87 jet"
+        },
+        {
+            "text": "NGC 2683, known as the UFO Galaxy, appears edge-on, allowing us to study its structure without interference from its central bulge.",
+            "query": "NGC 2683 UFO Galaxy"
+        },
+        {
+            "text": "The Large Magellanic Cloud, a satellite galaxy of the Milky Way, is rich in active star-forming regions like the Tarantula Nebula.",
+            "query": "Large Magellanic Cloud star formation"
+        },
+        {
+            "text": "Messier 82, or the Cigar Galaxy, is notable for its starburst activity, producing stars at a rate 10 times greater than that of the Milky Way.",
+            "query": "Messier 82 starburst"
+        },
+        {
+            "text": "NGC 4921 is an anemic spiral galaxy in the Coma Cluster, characterized by faint spiral arms and low star formation rate.",
+            "query": "NGC 4921 Coma Cluster anemic spiral"
+        },
+        {
+            "text": "Baby Boom Galaxy, dubbed the 'cosmic baby boom', is forming stars at an extreme rate, likened to the birth rate of a cosmic population boom.",
+            "query": "Baby Boom Galaxy star formation"
+        },
+        {
+            "text": "NGC 7742 is unique for its perfectly circular symmetry and bright core, fuelling discussions about its unusual star formation history.",
+            "query": "NGC 7742 ring galaxy"
+        },
+        {
+            "text": "The Sagittarius Dwarf Spheroidal Galaxy, one of the Milky Way's satellite galaxies, is in the process of being consumed by our galaxy.",
+            "query": "Sagittarius Dwarf Spheroidal Galaxy Milky Way"
+        },
+        {
+            "text": "The Whirlpool Galaxy, also known as M51, is famous for its grand-design spiral structure and its close interaction with its companion galaxy, NGC 5195.",
+            "query": "Whirlpool Galaxy M51 interaction with NGC 5195"
+        },
+        {
+            "text": "Andromeda Galaxy, our closest large galactic neighbor, is on a collision course with the Milky Way, set to merge in about 4.5 billion years.",
+            "query": "Andromeda Galaxy Milky Way collision"
+        },
+        {
+            "text": "The Sombrero Galaxy, or M104, is notable for its bright nucleus and an unusually large central bulge, giving it the appearance of a Sombrero hat.",
+            "query": "Sombrero Galaxy M104 features"
+        },
+        {
+            "text": "The Large Magellanic Cloud is a satellite galaxy of the Milky Way and home to the Tarantula Nebula, the most active star-forming region in our local group of galaxies.",
+            "query": "Large Magellanic Cloud Tarantula Nebula"
+        },
+        {
+            "text": "The Triangulum Galaxy, or M33, is known for its lack of a large central bulge and its beautiful, well-defined spiral arms.",
+            "query": "Triangulum Galaxy M33 structure"
+        },
+        {
+            "text": "Centaurus A is a peculiar galaxy featuring a massive black hole at its center, emitting strong radio waves and having a distinctive dark dust lane.",
+            "query": "Centaurus A black hole radio emissions"
+        },
+        {
+            "text": "Messier 87 is renowned for housing one of the most massive black holes ever discovered, which was the first to be imaged directly by the Event Horizon Telescope.",
+            "query": "Messier 87 black hole image"
+        },
+        {
+            "text": "NGC 1300 is a barred spiral galaxy noted for its classic and well-defined barred structure and the intricate spiral arms extending from it.",
+            "query": "NGC 1300 barred spiral structure"
+        },
+        {
+            "text": "The Tadpole Galaxy is distinguished by its long tidal tail, formed by a recent interaction with another galaxy, giving it its tadpole-like appearance.",
+            "query": "Tadpole Galaxy tidal tail formation"
+        },
+        {
+            "text": "IC 1101 is one of the largest known galaxies, stretching over 6 million light-years across, and hosting a massive number of stars, making it a giant among galaxies.",
+            "query": "IC 1101 largest galaxy"
+        },
+        {
+            "text": "NGC 4921 is an example of an anemic galaxy, featuring faded spirals and low levels of star-forming activity despite its spiral structure.",
+            "query": "NGC 4921 anemic galaxy characteristics"
+        },
+        {
+            "text": "Cartwheel Galaxy's distinctive ring structure was likely formed by a collision with a smaller galaxy, making it a striking example of a ring galaxy.",
+            "query": "Cartwheel Galaxy ring formation"
+        },
+        {
+            "text": "Hoag's Object is a rare example of a ring galaxy with a nearly perfect circular ring of young stars surrounding a dense core.",
+            "query": "Hoag's Object ring galaxy"
+        },
+        {
+            "text": "The Antennae Galaxies, or NGC 4038/NGC 4039, are known for their ongoing collision process, resulting in intense starburst activity.",
+            "query": "Antennae Galaxies collision starburst"
+        },
+        {
+            "text": "The Pinwheel Galaxy, or M101, is famous for its large and well-defined spiral arms, hosting numerous regions of active star formation.",
+            "query": "Pinwheel Galaxy M101 spiral arms"
+        },
+        {
+            "text": "NGC 6745 is recognized for its peculiar appearance caused by a dramatic galaxy collision which is distorting its structure.",
+            "query": "NGC 6745 galaxy collision effects"
+        },
+        {
+            "text": "The Medusa Merger (NGC 4194) is named for its appearance in the infrared spectrum, resembling Medusa's head from Greek mythology.",
+            "query": "Medusa Merger NGC 4194 infrared appearance"
+        },
+        {
+            "text": "NGC 1371 is a spiral galaxy known for its bright central region and the dusty spiral arms that appear to form a ring structure.",
+            "query": "NGC 1371 spiral galaxy ring"
+        },
+        {
+            "text": "NGC 3314 is a pair of overlapping spiral galaxies, notable for the dramatic juxtaposition and the apparent warping of their structures.",
+            "query": "NGC 3314 overlapping spiral galaxies"
+        },
+        {
+            "text": "The Sunflower Galaxy, or M63, features a distinctive spiral pattern with many short arms filled with young stars and dusty nebulae.",
+            "query": "Sunflower Galaxy M63 spiral pattern"
+        },
+        {
+            "text": "NGC 1566, known as the Spanish Dancer, is a stunning face-on spiral galaxy featuring prominently twisted arms.",
+            "query": "NGC 1566 Spanish Dancer features"
+        },
+        {
+            "text": "NGC 2440 is notable for being a planetary nebula with bright, complex structures and its central star is one of the hottest known.",
+            "query": "NGC 2440 planetary nebula"
+        },
+        {
+            "text": "NGC 2841 stands out for its tightly wound spiral arms and a relatively low rate of new star formation.",
+            "query": "NGC 2841 spiral galaxy structure"
+        },
+        {
+            "text": "NGC 5866, also known as the Spindle Galaxy, is noted for its prominent dust lane that divides its disk's light, viewed edge-on.",
+            "query": "NGC 5866 Spindle Galaxy dust lane"
+        },
+        {
+            "text": "NGC 4889 hosts a supermassive black hole estimated to have a mass of 21 billion solar masses, making it one of the largest known.",
+            "query": "NGC 4889 supermassive black hole"
+        },
+        {
+            "text": "IC 1101 is one of the largest known galaxies, spanning approximately 4 million light-years across—about 40 times the size of our Milky Way.",
+            "query": "IC 1101 largest galaxy universe"
+        }
+    ]
+}

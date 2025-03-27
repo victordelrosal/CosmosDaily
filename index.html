@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos Daily ✨ AI-Powered Cosmic Discoveries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Syne:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+  <style>
+    :root {
+      --neon-purple: hsl(270, 100%, 70%);
+      --hologram-blue: hsl(210, 100%, 60%);
+      --cyber-gradient: linear-gradient(135deg, var(--neon-purple), var(--hologram-blue));
+      --deep-space: hsl(240, 30%, 8%);
+      --stardust: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--deep-space);
+      color: white;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+    .galaxy-bg {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background:
+        radial-gradient(circle at 20% 80%, var(--neon-purple) 0%, transparent 30%),
+        radial-gradient(circle at 80% 20%, var(--hologram-blue) 0%, transparent 30%);
+      z-index: -1;
+      opacity: 0.3;
+    }
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: rgba(16, 18, 27, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 3rem;
+      border: 1px solid var(--stardust);
+      box-shadow: 0 0 50px rgba(140, 82, 255, 0.2);
+      transform: perspective(1000px) rotateX(3deg);
+      position: relative;
+      overflow: hidden;
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(
+        transparent 20%,
+        var(--neon-purple),
+        transparent 80%
+      );
+      animation: rotate 20s linear infinite;
+      opacity: 0.1;
+    }
+    @keyframes rotate {
+      100% { transform: rotate(360deg); }
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      background: linear-gradient(45deg, #fff 30%, var(--hologram-blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.03em;
+      position: relative;
+    }
+    .generate-btn {
+      width: 100%;
+      padding: 1.5rem;
+      background: var(--cyber-gradient);
+      border: none;
+      border-radius: 16px;
+      color: white;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .generate-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 25px rgba(140, 82, 255, 0.4);
+    }
+    .generate-btn::after {
+      content: '✦✦✦';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+      );
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .generate-btn:hover::after { left: 100%; }
+    .section {
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      border-left: 4px solid var(--neon-purple);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+      cursor: pointer;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.6s ease, box-shadow 0.4s ease;
+    }
+    .section.visible:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(140, 82, 255, 0.2), 0 5px 15px rgba(66, 153, 225, 0.15);
+      border-left: 4px solid var(--hologram-blue);
+    }
+    .section h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--hologram-blue);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .section h2::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: var(--cyber-gradient);
+      border-radius: 3px;
+      transform: rotate(45deg);
+    }
+    .section p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .section p a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .section p a:hover { color: var(--hologram-blue); }
+    @media (max-width: 768px) {
+      .container { padding: 2rem; border-radius: 20px; }
+      h1 { font-size: 2.5rem; }
+      .section { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="galaxy-bg"></div>
+  <div class="container">
+    <h1>COSMOS DAILY</h1>
+    <button class="generate-btn" onclick="generatePost()">GENERATE COSMIC WISDOM ⚡</button>
+    <div class="section"><h2>🌍 TERRESTRIAL PLACE OF THE DAY</h2><p id="place">Scanning terrestrial coordinates...</p></div>
+    <div class="section"><h2>🪐 SOLAR SYSTEM FACT OF THE DAY</h2><p id="solar">Accessing planetary database...</p></div>
+    <div class="section"><h2>⭐ MILKY WAY OBJECT OF THE DAY</h2><p id="milkyway">Mapping stellar cartography...</p></div>
+    <div class="section"><h2>🌌 GALAXY OF THE DAY</h2><p id="galaxy">Computing intergalactic index...</p></div>
+  </div>
+  <script>
+    let isGenerating = false;
+    let cosmicData = null;
+
+    // Initialize on page load
+    window.addEventListener('load', initialize);
+
+    // Helper function to get seen items from localStorage
+    function getSeen(category) {
+      const seen = JSON.parse(localStorage.getItem(`seen_${category}`) || '[]');
+      return new Set(seen);
+    }
+
+    // Helper function to save seen items to localStorage
+    function saveSeen(category, seenSet) {
+      localStorage.setItem(`seen_${category}`, JSON.stringify([...seenSet]));
+    }
+
+    // Helper function to get random unseen item
+    function getRandomUnseen(category, data) {
+      const seen = getSeen(category);
+      const pool = data.filter((_, i) => !seen.has(i));
+      
+      // If all items have been seen, reset
+      if (pool.length === 0) {
+        localStorage.removeItem(`seen_${category}`);
+        return getRandomUnseen(category, data); // Retry after reset
+      }
+      
+      const index = Math.floor(Math.random() * pool.length);
+      const selected = pool[index];
+      const realIndex = data.indexOf(selected);
+      seen.add(realIndex);
+      saveSeen(category, seen);
+      return selected;
+    }
+
+    async function initialize() {
+      try {
+        console.log('Initializing Cosmos Daily...');
+        
+        // Fetch the cosmic data from the local directory (same as index.html)
+        console.log('Fetching cosmic data...');
+        const response = await fetch('cosmic_data_full.json');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        
+        cosmicData = await response.json();
+        console.log('Data loaded successfully:', {
+          terrestrial: cosmicData.terrestrial.length,
+          solar: cosmicData.solar.length,
+          milkyway: cosmicData.milkyway.length,
+          galaxies: cosmicData.galaxies.length
+        });
+        
+        // Generate initial cosmic wisdom
+        generatePost();
+        
+      } catch (error) {
+        console.error('Failed to initialize:', error);
+        
+        // Fallback data if fetch fails
+        console.warn('Using fallback data');
+        cosmicData = {
+          terrestrial: [{text: "The Salar de Uyuni in Bolivia becomes a giant mirror when wet.", query: "Salar de Uyuni mirror effect"}],
+          solar: [{text: "Jupiter's Great Red Spot is a storm bigger than Earth.", query: "Jupiter Great Red Spot"}],
+          milkyway: [{text: "The Cannonball Pulsar is racing at 1,130 km/s with a 13-light-year tail.", query: "Cannonball Pulsar"}],
+          galaxies: [{text: "Messier 87 hosts the first directly imaged black hole.", query: "Messier 87 black hole image"}]
+        };
+        
+        // Show error in UI
+        document.getElementById('place').textContent = `⚠️ Error loading data: ${error.message}`;
+        
+        // Enable generation with fallback data
+        generatePost();
+      }
+    }
+
+    function generatePost() {
+      if (isGenerating || !cosmicData) {
+        console.warn('Cannot generate post: ' + (isGenerating ? 'Already generating' : 'No data available'));
+        return;
+      }
+      
+      isGenerating = true;
+      
+      const btn = document.querySelector('.generate-btn');
+      const sections = document.querySelectorAll('.section');
+      
+      // Reset animation
+      sections.forEach(section => section.classList.remove('visible'));
+      btn.innerHTML = '🌀 CALCULATING COSMOS...';
+      btn.disabled = true;
+
+      try {
+        // Get random items from each category, tracking what's been seen
+        const terrestrialItem = getRandomUnseen('terrestrial', cosmicData.terrestrial);
+        const solarItem = getRandomUnseen('solar', cosmicData.solar);
+        const milkywayItem = getRandomUnseen('milkyway', cosmicData.milkyway);
+        const galaxyItem = getRandomUnseen('galaxies', cosmicData.galaxies);
+
+        // Animate sections and update content
+        sections.forEach((section, index) => {
+          setTimeout(() => {
+            section.classList.add('visible');
+          }, index * 200);
+        });
+        
+        // Update content with links
+        updateSectionWithLink('place', terrestrialItem);
+        updateSectionWithLink('solar', solarItem);
+        updateSectionWithLink('milkyway', milkywayItem);
+        updateSectionWithLink('galaxy', galaxyItem);
+
+      } catch (error) {
+        console.error('Generation error:', error);
+        document.getElementById('place').textContent = '⚠️ Error generating content - Try again!';
+        sections.forEach(section => section.classList.add('visible'));
+      } finally {
+        btn.innerHTML = 'EXPLORE MORE COSMOS 🔄';
+        btn.disabled = false;
+        isGenerating = false;
+      }
+    }
+
+    // Helper function to update section with clickable link
+    function updateSectionWithLink(elementId, item) {
+      const element = document.getElementById(elementId);
+      if (!item || !item.text || !item.query) {
+        element.textContent = 'Data unavailable';
+        return;
+      }
+      
+      const link = document.createElement('a');
+      link.href = `https://www.google.com/search?q=${encodeURIComponent(item.query)}`;
+      link.target = '_blank';
+      link.textContent = item.text;
+      link.style.color = 'inherit';
+      link.style.textDecoration = 'none';
+      
+      element.innerHTML = '';
+      element.appendChild(link);
+    }
+  </script>
+</body>
+</html>

@@ -326,15 +326,20 @@
         return;
       }
       
-      const link = document.createElement('a');
-      link.href = `https://www.google.com/search?q=${encodeURIComponent(item.query)}`;
-      link.target = '_blank';
-      link.textContent = item.text;
-      link.style.color = 'inherit';
-      link.style.textDecoration = 'none';
+      // Create the text content first
+      element.textContent = item.text;
       
-      element.innerHTML = '';
-      element.appendChild(link);
+      // Find the parent section element
+      const sectionElement = element.closest('.section');
+      
+      // Make the entire section clickable
+      sectionElement.onclick = function() {
+        window.open(`https://www.google.com/search?q=${encodeURIComponent(item.query)}`, '_blank');
+      };
+      
+      // Add style to indicate clickability
+      sectionElement.style.cursor = 'pointer';
+      sectionElement.title = `Click to search: ${item.query}`;
     }
   </script>
 </body>
